@@ -242,6 +242,7 @@ h2 {
 .teammembers.section {
   background-color: #f5f4fa;
   text-align: center;
+  padding-top: 0;
 }
 .teammembers {
   padding-top: 94px;
@@ -295,11 +296,11 @@ h3 {
 /*Footer*/
 
 .footer-section {
-  display: block;
-
-  background: #2f303a;
+  padding-top: 0;
+  background-color: #2f303a;
+  margin: 0;
 }
-.footer-section > .logo {
+.container > .logo {
   display: inline-flex;
   padding-top: 60px;
   margin-bottom: 20px;
@@ -310,7 +311,7 @@ h3 {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.footer-section .logo-item {
+.container.logo-item {
   color: var(--additional-text-color);
 }
 
