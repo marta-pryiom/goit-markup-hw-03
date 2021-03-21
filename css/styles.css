@@ -57,9 +57,11 @@ body {
   margin-right: auto;
 }
 
-.title {
+.header-section {
   background-color: var(--additional-text-color);
   border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .main-nav {
   display: flex;
@@ -67,16 +69,16 @@ body {
   margin-bottom: 0;
 }
 
-.nav .logo {
+.logo {
   display: inline-flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
 }
 .logo-title {
   color: var(--accent-color);
@@ -87,7 +89,10 @@ body {
   display: inline-flex;
   margin-left: 93px;
 }
-
+/* .site-nav .item {
+  /* padding-top: 24px; */
+/* padding-bottom: 25px;
+} */
 .site-nav .item + .item {
   margin-left: 50px;
 }
@@ -133,7 +138,7 @@ body {
 }
 
 /* Hero section*/
-.section {
+.hero.section {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -174,6 +179,10 @@ body {
 
 /*Benefit section*/
 
+.benefits.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -214,8 +223,9 @@ body {
   color: var(--title-text-color);
 }
 /* what we are doing*/
-.container.section {
-  padding-top: 94px;
+.work.section {
+  padding-top: 0;
+  padding-bottom: 94px;
 }
 .work-item {
   display: flex;
@@ -227,7 +237,7 @@ body {
   margin-right: 30px;
 }
 
-h2 {
+.title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -242,16 +252,12 @@ h2 {
 .teammembers.section {
   background-color: #f5f4fa;
   text-align: center;
-  padding-top: 0;
-}
-.teammembers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
   margin-bottom: 0;
 }
-.teammembers h2 {
+
+.teammembers-title {
   margin-bottom: 50px;
-  padding: 94px 0 0 0;
 }
 
 .members.list {
@@ -259,7 +265,7 @@ h2 {
   justify-content: space-between;
 }
 
-h3 {
+.description h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -295,23 +301,21 @@ h3 {
 
 /*Footer*/
 
-.footer-section {
-  padding-top: 0;
+.footer.section {
+  padding: 60px 0;
   background-color: #2f303a;
   margin: 0;
 }
 .container > .logo {
   display: inline-flex;
-  padding-top: 60px;
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
 }
-.container.logo-item {
+.logo-item {
   color: var(--additional-text-color);
 }
 
@@ -322,11 +326,13 @@ h3 {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--additional-text-color);
+  margin: 0;
 }
 .auth-list {
   display: block;
   text-align: left;
-  padding: 0 0 60px 0;
+  margin: 9px 0 0;
+  padding: 0;
 }
 .auth-item {
   color: rgba(255, 255, 255, 0.6);
@@ -343,7 +349,7 @@ h3 {
 
 .main-section {
   background-color: var(--primary-bg-color);
-  margin-bottom: 94px;
+  padding: 94px 0;
 }
 
 .button {
@@ -361,8 +367,7 @@ h3 {
 .filters {
   display: flex;
   justify-content: center;
-  margin: 0 0 34px 0;
-  padding: 94px 0 0 0;
+  margin: 0 0 50px 0;
 }
 .filters > .list {
   padding: 0;
@@ -410,7 +415,6 @@ h1 {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-  padding-top: 20px;
   padding-bottom: 0;
   margin-bottom: 4px;
 }
