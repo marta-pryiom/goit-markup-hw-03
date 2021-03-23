@@ -244,7 +244,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  padding: 0 0 50px 0;
+  padding: 0;
+  margin-bottom: 50px;
 }
 
 /*Our teammembers*/
@@ -290,13 +291,11 @@ body {
 
 .description {
   display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .description h3 {
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-.description p {
-  padding-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 /*Footer*/
@@ -367,6 +366,7 @@ body {
 .filters {
   display: flex;
   justify-content: center;
+  padding: 0;
   margin: 0 0 50px 0;
 }
 .filters > .list {
